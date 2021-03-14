@@ -92,8 +92,6 @@ var PsyPhen = (function()
 			sendChat('Psychic Phenomena', 
 					Chat_Formatting_START + 'Inital roll: ' +roll + Chat_Formatting_END);
 			
-			//Splitting roll to check for doubles 
-			var digits = (""+roll).split("");
 			//Checking for push 
 			if (args.length === 2)
 			{
@@ -102,7 +100,7 @@ var PsyPhen = (function()
 				}
 			}
 			//Checking for Perils of the Warp
-			if((digits[0] === digits[1] && push === false) || (digits[0] !== digits[1] && push === true) || (roll > 74)){
+			if(roll > 74){
 				perilsOfWarp = true;
 			}
 			
