@@ -83,22 +83,13 @@ var PsyPhen = (function()
 			const args = msg.content.split(/\s/);
 			
 			var content = msg.content;
-			var words = content.split(' ');
 			var roll = randomInteger(100);
-			var push = false;
 			var perilsOfWarp = false;
 			
 			//Shows inital roll
 			sendChat('Psychic Phenomena', 
 					Chat_Formatting_START + 'Inital roll: ' +roll + Chat_Formatting_END);
-			
-			//Checking for push 
-			if (args.length === 2)
-			{
-				if(args[1].toUpperCase() === 'PUSH') {
-					push = true;
-				}
-			}
+
 			//Checking for Perils of the Warp
 			if(roll > 74){
 				perilsOfWarp = true;
