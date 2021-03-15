@@ -8,4 +8,6 @@ To use simply add this script to your Roll20 game and use the '!psyp' command
 
 Should work just fine, let me know if you have any issues. 
 
+critTableScript is a work in progress
+
 My discord tag is Turkey#7110
