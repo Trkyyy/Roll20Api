@@ -6,7 +6,7 @@
 	
 
 	//Energy tables
-	const energyArm =
+	var energyArm =
 	[
 		{low: 1,  result: "The attack grazes the target's arm, causing it to spasm uncontrollably with pain. All tests involving that arm suffer a -30 penalty for 1d5 rounds."},
 		{low: 2,  result: "The attack smashes into the arm, sending currents of energy crackling down to the fingers and up to the shoulder. The target suffers 1 level of Fatigue, and that arm is Useless for 1d5 rounds. "},
@@ -20,7 +20,7 @@
 		{low: 10,  result: "The attack reduces the arm to a cloud of crimson ash and sends the target crumbling to the ground. He immediately dies from shock, clutching his smoking stump."}
 	];
 	
-	const energyBody =
+	var energyBody =
 	[
 		{low: 1,  result: "A blow to the target's body steals the air from his lungs. The target can take only a Half Action on his next turn."},
 		{low: 2,  result: "The blast punches the air from the targets body. He must make a Challenging (+0) Toughness test or be knocked Prone."},
@@ -34,7 +34,7 @@
 		{low: 10,  result: "As above, but if the target is carrying any ammunition, roll 1d10: on a result of 6 or higher, it explodes. Each target within 1d5 metres suffers a single hit for 1d10+5 Explosive damage to a randomly determined Hit Location. If the target carried any grenades or missiles, these detonate on the character's corpse with their normal effects one round after his demise. "}
 	];
 	
-	const energyHead =
+	var energyHead =
 	[
 		{low: 1,  result: "A grazing blow to the head disorientates the target. He suffers a -10 penalty to all tests (except Toughness tests) for 1 round."},
 		{low: 2,  result: "The blast of energy dazzles the target. He is Blinded for 1 round."},
@@ -48,7 +48,7 @@
 		{low: 10,  result: "As above, except the target's entire body catches fire and runs off headless 2d10 metres in a random direction (use the Scatter Diagram on page 230). Anything flammable it passes, including characters, must make a Challenging (+0) Agility test or catch fire (see page 243). "}
 	];
 	
-	const energyLeg =
+	var energyLeg =
 	[
 		{low: 1,  result: "The blast of energy sears the flesh and bone of the target's leg, leaving a nasty burn scar. The target cannot use the Run or Charge actions for 2 rounds."},
 		{low: 2,  result: "The attack flash-fries the target's leg, cooking chunks of flesh into char. The target must pass a Challenging (+0) Toughness test or suffer 1 level of Fatigue."},
@@ -63,7 +63,7 @@
 	];
 	
 	//Explosive tables
-	const explosiveArm =
+	var explosiveArm =
 	[
 		{low: 1,  result: "The attack throws the limb backwards, painfully jerking it away from the body. The target suffers 1 level of Fatigue."},
 		{low: 2,  result: "The force of the blast snaps the bones of the arm in half. The target drops anything held in that hand and must pass a Challenging (+0) Toughness test or be Stunned for 1 round."},
@@ -77,7 +77,7 @@
 		{low: 10,  result: "As above, except if the target is carrying any ammunition it explodes, inflicting a single hit for 1d10+5 Impact damage to a randomly determined Hit Location upon each target within 1d10 metres (in addition to the hit noted above). If the target is carrying any grenades or missiles, these also detonate immediately with their normal effects."}
 	];
 	
-	const explosiveBody =
+	var explosiveBody =
 	[
 		{low: 1,  result: "The explosion flings the target backwards 1d5 metres. The target is knocked Prone."},
 		{low: 2,  result: "The target is blown backwards 1d5 metres by a terrific explosion, suffering 1 level of Fatigue per metre travelled. The target is knocked Prone."},
@@ -91,7 +91,7 @@
 		{low: 10,  result: "As above, except anyone within 1d10 metres of the target is drenched in gore. Each affected character must make a Challenging (+0) Agility test or suffer a -10 penalty to Weapon Skill and Ballistic Skill tests for 1 round, as blood fouls his sight."}
 	];
 	
-	const explosiveHead =
+	var explosiveHead =
 	[
 		{low: 1,  result: "The explosion leaves the target confused. He can take only a Half Action on his next turn as he recovers his senses."},
 		{low: 2,  result: "The flash and noise leaves the target Blinded and Deafened for 1 round."},
@@ -105,7 +105,7 @@
 		{low: 10,  result: "As above, except such is the unspeakably appalling manner in which the target was killed that each of the target's allies within two metres of where the target stood must make an immediate Challenging (+0) Willpower test. If an ally fails the test, he must spend his next turn fleeing from the attacker."}
 	];
 	
-	const explosiveLeg =
+	var explosiveLeg =
 	[
 		{low: 1,  result: "A glancing blast sends the character backwards one metre. The target must make a Challenging (+0) Toughness test or be knocked Prone."},
 		{low: 2,  result: "The force of the explosion takes the target's feet out from under him. He is knocked Prone and cannot use any Movement action except for the Half Move action for 1d5 rounds. "},
@@ -120,7 +120,7 @@
 	];
 	
 	//Impact tables
-	const impactArm =
+	var impactArm =
 	[
 		{low: 1,  result: "The attack strikes the target's limb with a powerful blow. He drops anything he was holding in that hand."},
 		{low: 2,  result: "The strike leaves a deep bruise, possibly causing minor fractures in the arm. The target suffers 1 level of Fatigue."},
@@ -134,7 +134,7 @@
 		{low: 10,  result: "As per the effect directly above, except as the arm is removed by the force of the attack, bone, chunks of flesh, clothing, and armour fragments fly about like blood-soaked shrapnel. Each target within 2 metres suffers a single hit for 1d5-3 Impact damage to a randomly determined Hit Location."}
 	];
 	
-	const impactBody =
+	var impactBody =
 	[
 		{low: 1,  result: "A blow to the target's body steals the breath from his lungs. The target can take only a Half Action on his next turn."},
 		{low: 2,  result: "The impact punches the air from the target's body. He suffers 1 level of Fatigue and is knocked Prone. "},
@@ -148,7 +148,7 @@
 		{low: 10,  result: "As per the effect directly above, except the target's lifeless form is thrown 1d10 metres directly away from the attack. Any target in the corpse's path must make a Challenging (+0) Agility test or be knocked Prone."}
 	];
 	
-	const impactHead =
+	var impactHead =
 	[
 		{low: 1,  result: "The impact fills the target's head with a terrible ringing noise. The target must make a Challenging (+0) Toughness test or suffer 1 level of Fatigue."},
 		{low: 2,  result: "The hit causes the target's sight to blur and his head to spin. The target suffers a -10 penalty to Perception and Intelligence tests for 1d5 rounds."},
@@ -162,7 +162,7 @@
 		{low: 10,  result: "As above, except that the attack was so powerful that it passes through the target and strikes another target nearby. If the hit was from a melee weapon, the attacker may immediately make another attack (with the same weapon) against any other target he can reach without moving. If the hit was from a ranged weapon, he may immediately make another attack (with the same weapon) against any target standing directly behind the original target and within range of his weapon."}
 	];
 	
-	const impactLeg =
+	var impactLeg =
 	[
 		{low: 1,  result: "A blow to the leg results in deep bruises and teeth-clenching pain. The target suffers 1 level of Fatigue."},
 		{low: 2,  result: "A grazing strike against the leg slows the target. The target's Movement is reduced by half (rounding up) for 1 round. He must make a Challenging (+0) Toughness test or be Stunned for 1 round and fall Prone."},
@@ -177,7 +177,7 @@
 	];
 	
 	//Rending tables
-	const rendingArm =
+	var rendingArm =
 	[
 		{low: 1,  result: "The slashing attack tears free whatever the target was carrying. He drops anything he was holding in that hand."},
 		{low: 2,  result: "Deep cuts cause the target to drop his arm. He suffers 1 level of Fatigue and releases anything he was holding in that hand."},
@@ -191,7 +191,7 @@
 		{low: 10,  result: "As above, but as the arm falls to the ground its fingers spasm uncontrollably, pulling the trigger of any held weapon. If the target was carrying a ranged weapon, roll 1d100. On a result of 96 or higher, a single randomly determined target within 2d10 metres is hit struck by a single hit from that weapon on a randomly determined Hit Location. "}
 	];
 	
-	const rendingBody =
+	var rendingBody =
 	[
 		{low: 1,  result: "If the target is not wearing armour on this location, he suffers 1 level of Fatigue from a painful laceration. If he is wearing armour, there is no effect, and he thanks the Emperor for his foresight. "},
 		{low: 2,  result: "A powerful slash opens a painful rent in the target's body. He suffers 1 level of Fatigue and must make a Challenging (+0) Toughness test or be Stunned for 1 round."},
@@ -205,21 +205,21 @@
 		{low: 10,  result: "As above, except that the area and the target are awash with slippery gore. For the rest of the fight, any character who moves within four metres of the target's corpse must make a Challenging (+0) Agility test or fall Prone."}
 	];
 	
-	const rendingHead =
+	var rendingHead =
 	[
 		{low: 1,  result: "The attack tears a painful rent in the target's face. If he is wearing a helmet, he suffers no ill effects; otherwise, he suffers 1 level of Fatigue."},
 		{low: 2,  result: "The attack slices open the target's scalp, which immediately begins to bleed profusely, spilling into his eyes. The target suffers a -10 penalty to Weapon Skill and Ballistic Skill tests for the next 1d10 rounds. He must pass a Challenging (+0) Toughness test or suffer Blood Loss. "},
 		{low: 3,  result: "The attack rips open the target's face with a vicious shredding sound. He is Stunned for 1 round and suffers Blood Loss. If he is wearing a helmet, it is torn off. "},
 		{low: 4,  result: "The attack slices across one of the target's eye sockets, possibly scooping out the eye. The target suffers 1d10 Perception damage. He must make a Routine (+20) Toughness; test if he fails, he suffers the Lost Eye condition (see page 242)."},
 		{low: 5,  result: "The attack tears the target's helmet from his head. If he is not wearing a helmet, the target instead loses an ear and is Deafened until he receives medical attention. If he loses an ear, he must also must pass a Challenging (+0) Toughness test or have his Fellowship characteristic permanently reduced by 1. The target is Stunned for 1d5 rounds."},
-		{low: 6,  result: ""}, //Special code needed for this
+		{low: 6,  result: "The blow rips violently across the target's face, taking with it an important feature. He suffers 1d5 levels of Fatigue and suffers Blood Loss. Roll 1d10 to see what the target has lost.1-3: Eye (see the Lost Eye condition on page 242),4-7: Nose (permanently reduce his Fellowship characteristic by 1d10),8-10: Ear (the target is Deafened until he receives medical attention)."}, //Special code needed for this
 		{low: 7,  result: "In a splatter of skin and teeth, the attack removes most of the target's face. The strike might not have slain him, but the target's words are forever slurred as a result of this vicious injury. The target is Stunned for 1 round and suffers Blood Loss. He is permanently Blinded. Permanently reduce his Fellowship characteristic by 1d10."},
 		{low: 8,  result: "The blow slices into the side of the target's head causing his eyes to pop out and his brain to ooze down his cheek like spilled jelly. He is dead before he hits the ground."},
 		{low: 9,  result: "With a sound not unlike a wet sponge being torn in half, the target's head flies free of its body and sails through the air, landing harmlessly 2d10 metres away with a soggy thud. The target is instantly slain."},
 		{low: 10,  result: "As above, except the target's neck spews blood in a torrent, drenching all those within 1d5 metres and forcing each effected target to make a Challenging (+0) Agility test. Each character who fails the Test suffers a -10 penalty to Weapon Skill and Ballistic Skill tests for 1 round, as gore fills his eyes or fouls his visor."}
 	];
 	
-	const rendingLeg =
+	var rendingLeg =
 	[
 		{low: 1,  result: "The attack knocks the limb backwards, painfully twisting it awkwardly. The target suffers 1 level of Fatigue."},
 		{low: 2,  result: "The target's kneecap splits open. He must make a Challenging (+0) Agility test or fall Prone and suffer Blood Loss as the injured extremity hits the ground."},
@@ -233,7 +233,7 @@
 		{low: 10,  result: "As above, except that the tide of blood is so intense that, for the remainder of the encounter, any character who makes a Run or Charge action within 6 metres of the corpse must make a Challenging (+0) Agility test or be knocked Prone."}
 	];
 	
-	const template =
+	var template =
 	[
 		{low: 1,  result: ""},
 		{low: 2,  result: ""},
@@ -245,11 +245,6 @@
 		{low: 8,  result: ""},
 		{low: 9,  result: ""},
 		{low: 10,  result: ""}
-	];
-	
-	const tablesTable = [
-		{name: 'energyArm', table: energyArm},
-		{name: '', table: energyBody}
 	];
 
 	function registerEventHandlers()
@@ -287,55 +282,55 @@
 					case 'E':
 						switch(args[3].toUpperCase()){
 							case 'H':
-								returnMessage = CritTables._findValue(args[1], energyHead);
+								returnMessage = (CritTables._findValue(args[1], energyHead)).result;
 								break;
 							case 'B':
-								returnMessage = CritTables._findValue(args[1], energyBody);
+								returnMessage = (CritTables._findValue(args[1], energyBody)).result;
 								break;
 							case 'A':
-								returnMessage = CritTables._findValue(args[1], 'energyArm');
+								returnMessage = (CritTables._findValue(args[1], energyArm)).result;
 								break;
 							case 'L':
-								returnMessage = CritTables._findValue(args[1], energyLeg);
+								returnMessage = (CritTables._findValue(args[1], energyLeg)).result;
 								break;
 						}
 						break;
 					case 'X':
 						switch(args[3].toUpperCase()){
 							case 'H':
-								returnMessage = CritTables._findValue(args[1], explosiveHead);
+								returnMessage = (CritTables._findValue(args[1], explosiveHead)).result;
 								break;
 							case 'B':
-								returnMessage = CritTables._findValue(args[1], explosiveBody);
+								returnMessage = (CritTables._findValue(args[1], explosiveBody)).result;
 								break;
 							case 'A':
-								returnMessage = CritTables._findValue(args[1], explosiveArm);
+								returnMessage = (CritTables._findValue(args[1], explosiveArm)).result;
 								break;
 							case 'L':
-								returnMessage = CritTables._findValue(args[1], explosiveLeg);
+								returnMessage = (CritTables._findValue(args[1], explosiveLeg)).result;
 								break;
 						}
 						break;
 					case 'I':
 						switch(args[3].toUpperCase()){
 							case 'H':
-								returnMessage = CritTables._findValue(args[1], impactHead);
+								returnMessage = (CritTables._findValue(args[1], impactHead)).result;
 								break;
 							case 'B':
-								returnMessage = CritTables._findValue(args[1], impactBody);
+								returnMessage = (CritTables._findValue(args[1], impactBody)).result;
 								break;
 							case 'A':
-								returnMessage = CritTables._findValue(args[1], impactArm);
+								returnMessage = (CritTables._findValue(args[1], impactArm)).result;
 								break;
 							case 'L':
-								returnMessage = CritTables._findValue(args[1], impactLeg);
+								returnMessage = (CritTables._findValue(args[1], impactLeg)).result;
 								break;
 						}
 						break;
 					case 'R':
 						switch(args[3].toUpperCase()){
 							case 'H':
-								if(args[1] === 6){
+								if(args[1] == 6){
 									var rendingLost = randomInteger(10);
 									if(rendingLost < 4){
 										returnMessage = 'The blow rips violently across the target\'s face, taking with it an important feature. He suffers 1d5([[1d5]]) levels of Fatigue and suffers Blood Loss. Roll 1d10('+rendingLost+') to see what the target has lost: 1-3: Eye (see the Lost Eye condition on page 242)';
@@ -345,17 +340,17 @@
 										returnMessage = 'The blow rips violently across the target\'s face, taking with it an important feature. He suffers 1d5([[1d5]]) levels of Fatigue and suffers Blood Loss. Roll 1d10('+rendingLost+') to see what the target has lost: 8-10: Ear (the target is Deafened until he receives medical attention).';
 									}
 								}else{
-									returnMessage = CritTables._findValue(args[1], rendingHead);
+									returnMessage = (CritTables._findValue(args[1], rendingHead)).result;
 								}
 								break;
 							case 'B':
-								returnMessage = CritTables._findValue(args[1], rendingBody);
+								returnMessage = (CritTables._findValue(args[1], rendingBody)).result;
 								break;
 							case 'A':
-								returnMessage = CritTables._findValue(args[1], rendingArm);
+								returnMessage = (CritTables._findValue(args[1], rendingArm)).result;
 								break;
 							case 'L':
-								returnMessage = CritTables._findValue(args[1], rendingLeg);
+								returnMessage = (CritTables._findValue(args[1], rendingLeg)).result;
 								break;
 						}
 						break;
@@ -367,7 +362,7 @@
 				
 				if(returnMessage !== ''){
 					sendChat('Crit', 
-						Chat_Formatting_START + returnMessage.result + Chat_Formatting_END);
+						Chat_Formatting_START + returnMessage + Chat_Formatting_END);
 				}
 				else{
 					sendChat('Error Crit', 
@@ -378,16 +373,13 @@
 		}
 	}
 	
+	//Passing in the roll value and the table to be searched, tables switched from const to var to allow this to work.
 	function _findValue(roll, table)
 	{
-		var tableToUse = _.find(tablesTable, function (findTable)
-		{
-			return (table === findTable.name);
-		});
 		// Use _.find to find the perils 
-		return _.find(tableToUse, function (urdead)
+		return _.find(table, function (urdead)
 		{
-			return (roll === urdead.low);
+			return (roll == urdead.low);
 		});
 	}
 	
@@ -397,7 +389,8 @@
 	return {
 		registerEventHandlers: registerEventHandlers,
 		handleChatMessage: handleChatMessage,
-		_findValue: _findValue
+		_findValue: _findValue,
+		_findTable: _findTable
 		}
 }());
 
