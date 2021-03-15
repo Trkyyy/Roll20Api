@@ -1,4 +1,3 @@
-
 var PsyPhen = (function()
 {
 	'use strict';
