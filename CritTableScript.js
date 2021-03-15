@@ -1,7 +1,9 @@
-
-var CritTables = (function()
+ _
+ 
+ var CritTables = (function()
 {
 	'use strict';
+	
 
 	//Energy tables
 	const energyArm =
@@ -244,6 +246,11 @@ var CritTables = (function()
 		{low: 9,  result: ""},
 		{low: 10,  result: ""}
 	];
+	
+	const tablesTable = [
+		{name: 'energyArm', table: energyArm},
+		{name: '', table: energyBody}
+	];
 
 	function registerEventHandlers()
 	{
@@ -286,7 +293,7 @@ var CritTables = (function()
 								returnMessage = CritTables._findValue(args[1], energyBody);
 								break;
 							case 'A':
-								returnMessage = CritTables._findValue(args[1], energyArm);
+								returnMessage = CritTables._findValue(args[1], 'energyArm');
 								break;
 							case 'L':
 								returnMessage = CritTables._findValue(args[1], energyLeg);
@@ -360,7 +367,11 @@ var CritTables = (function()
 				
 				if(returnMessage !== ''){
 					sendChat('Crit', 
-						Chat_Formatting_START + returnMessage + Chat_Formatting_END);
+						Chat_Formatting_START + returnMessage.result + Chat_Formatting_END);
+				}
+				else{
+					sendChat('Error Crit', 
+						Chat_Formatting_START + 'Error' + Chat_Formatting_END);
 				}
 			}
 			
@@ -369,8 +380,12 @@ var CritTables = (function()
 	
 	function _findValue(roll, table)
 	{
+		var tableToUse = _.find(tablesTable, function (findTable)
+		{
+			return (table === findTable.name);
+		});
 		// Use _.find to find the perils 
-		return _.find(table, function (urdead)
+		return _.find(tableToUse, function (urdead)
 		{
 			return (roll === urdead.low);
 		});
