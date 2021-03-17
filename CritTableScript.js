@@ -391,7 +391,6 @@
 		registerEventHandlers: registerEventHandlers,
 		handleChatMessage: handleChatMessage,
 		_findValue: _findValue,
-		_findTable: _findTable
 		}
 }());
 
