@@ -12,6 +12,6 @@ Should work just fine, let me know if you have any issues.
 
 ScatterTable will just roll 1d10 and grab the value from the scatter table, very lightweight, use !scat 
 
-I am currently working on being able to input willpower modifier into the Psychic Phenomena roller and it will show you what options you can adjust to. Still a WIP
+If you want to use the WP modifier in the Psychic Phenomena roller just use !psyp wp eg: 'psyp 5' will show you all options avialable to the psyker, though this ability can only be used by sanctioned Psykers so no point using it for you NPC's unless they are. Also, if you input a wp modifier the rolls will not be automaitcally done as this could influence the psykers decision, you can do the rolls after the decision is made by pressing the 'Rolls' button beside the text of the choice or roll them yourself, personal preference.
 
 My discord tag is Turkey#7110
